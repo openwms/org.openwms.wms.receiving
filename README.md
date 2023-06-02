@@ -16,7 +16,7 @@ don't require any announcements and allow to capture goods that are not expected
 # Module Structure
 The Receiving Service contains functional modules, each with its own API and functionality.
 
-![MavenDependencies](src/site/resources/images/maven-deps.png)
+![MavenDependencies](./src/site/resources/images/maven-deps.png)
 
 # Build
 The service can be built and started locally without any other services.

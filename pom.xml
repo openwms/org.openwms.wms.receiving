@@ -73,6 +73,7 @@
         <org.openwms.wms.receiving.lib.version>1.0.0-SNAPSHOT</org.openwms.wms.receiving.lib.version>
         <servo-core.version>0.12.21</servo-core.version>
         <spring-cloud-dependencies.version>2021.0.7</spring-cloud-dependencies.version>
+        <wms.receiving.ui.version>1.0.0-SNAPSHOT</wms.receiving.ui.version>
     </properties>
 
     <reporting>
@@ -414,9 +415,6 @@
     <profiles>
         <profile>
             <id>enterprise</id>
-            <properties>
-                <org.openwms.wms.receiving.ui.version>1.0.0-SNAPSHOT</org.openwms.wms.receiving.ui.version>
-            </properties>
             <distributionManagement>
                 <repository>
                     <id>interface21-releases</id>
@@ -437,7 +435,7 @@
                 <dependency>
                     <groupId>org.openwms</groupId>
                     <artifactId>org.openwms.wms.receiving.ui</artifactId>
-                    <version>${org.openwms.wms.receiving.ui.version}</version>
+                    <version>${wms.receiving.ui.version}</version>
                 </dependency>
             </dependencies>
             <repositories>

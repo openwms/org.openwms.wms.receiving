@@ -46,6 +46,7 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 public class ReceivingRunner {
 
     public static void main(String[] args) {
-        SpringApplication.run(ReceivingRunner.class, args);
+        var ctx = SpringApplication.run(ReceivingRunner.class, args);
+        ctx.start();
     }
 }

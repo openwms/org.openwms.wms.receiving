@@ -148,7 +148,7 @@
                 <version>${joda-time.version}</version>
             </dependency>
             <dependency>
-                <!-- Clash between spring-boot-starter-test and dozer -->
+                <!-- Clash between Dozer and spring-boot-starter-test -->
                 <groupId>org.objenesis</groupId>
                 <artifactId>objenesis</artifactId>
                 <version>${objenesis.version}</version>

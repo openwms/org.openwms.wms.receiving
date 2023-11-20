@@ -23,7 +23,7 @@
     <distributionManagement>
         <site>
             <id>site</id>
-            <url>scm:git:ssh://git@github.com:openwms/${project.artifactId}.git</url>
+            <url>scm:git:git@github.com:openwms/${project.artifactId}.git</url>
         </site>
     </distributionManagement>
 
@@ -71,10 +71,10 @@
         <guava.version>30.0-jre</guava.version>
         <joda-time.version>2.10.8</joda-time.version>
         <objenesis.version>3.2</objenesis.version>
-        <org.openwms.wms.receiving.lib.version>1.0.0-SNAPSHOT</org.openwms.wms.receiving.lib.version>
+        <receiving.lib.version>1.0.0-SNAPSHOT</receiving.lib.version>
+        <receiving.ui.version>1.0.0-SNAPSHOT</receiving.ui.version>
         <servo-core.version>0.12.21</servo-core.version>
         <spring-cloud-dependencies.version>2021.0.8</spring-cloud-dependencies.version>
-        <wms.receiving.ui.version>1.0.0-SNAPSHOT</wms.receiving.ui.version>
     </properties>
 
     <reporting>
@@ -168,7 +168,7 @@
             <dependency>
                 <groupId>org.openwms</groupId>
                 <artifactId>org.openwms.wms.receiving.lib</artifactId>
-                <version>${org.openwms.wms.receiving.lib.version}</version>
+                <version>${receiving.lib.version}</version>
                 <classifier>all</classifier>
             </dependency>
             <dependency>
@@ -437,7 +437,7 @@
                 <dependency>
                     <groupId>org.openwms</groupId>
                     <artifactId>org.openwms.wms.receiving.ui</artifactId>
-                    <version>${wms.receiving.ui.version}</version>
+                    <version>${receiving.ui.version}</version>
                 </dependency>
             </dependencies>
             <repositories>

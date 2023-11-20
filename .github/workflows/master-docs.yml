@@ -68,7 +68,7 @@ jobs:
           -Dargs=-Dspring.profiles.active=ASYNCHRONOUS,TEST
           -Dspring.rabbitmq.host=localhost
           -Dscmuser=${{ secrets.GITHUB_TOKEN }}
-          -Dscmpublish.pubScmUrl=scm:git:https://openwms:${{ secrets.GITHUB_TOKEN }}@github.com/openwms/org.openwms.wms.receiving.git
-          -DdeveloperConnectionUrl=scm:git:https://openwms:${{ secrets.GITHUB_TOKEN }}@github.com/openwms/org.openwms.wms.receiving.git
+          -Dscmpublish.pubScmUrl=scm:git:https://${{ secrets.GITHUB_TOKEN }}@github.com/openwms/org.openwms.wms.receiving.git
+          -DdeveloperConnectionUrl=scm:git:https://${{ secrets.GITHUB_TOKEN }}@github.com/openwms/org.openwms.wms.receiving.git
           -Dci.buildNumber=$GITHUB_RUN_NUMBER
           -Prelease -B $MAVEN_OPTS

@@ -13,7 +13,7 @@ don't require any announcements and allow to capture goods that are not expected
 # Module Structure
 The Receiving Service contains functional modules, each with its own API and functionality.
 
-![MavenDependencies](../resources/images/maven-deps.png)
+![MavenDependencies][1]
 
 # Build
 The service can be built and started locally without any other services.
@@ -34,3 +34,5 @@ Or additionally run in a distributed environment with an already running Service
 ```
 $ java -Dspring.profiles.active=ASYNCHRONOUS,DISTRIBUTED,DEMO -jar target/openwms-wms-receiving-exec.jar 
 ```
+
+[1]: images/maven-deps.png

@@ -1,0 +1,37 @@
+// dot 7.1.0 on Mac OS X 14.1.1
+// SchemaSpy rev Unknown
+digraph "wms_inv_product_units" {
+  graph [
+    rankdir="RL"
+    bgcolor="#f7f7f7"
+    nodesep="0.18"
+    ranksep="0.46"
+    fontname="Helvetica"
+    fontsize="11"
+  ];
+  node [
+    fontname="Helvetica"
+    fontsize="11"
+    shape="plaintext"
+  ];
+  edge [
+    arrowsize="0.8"
+  ];
+  "wms_inv_product_units" [
+    label=<
+    <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
+      <TR><TD COLSPAN="3" BGCOLOR="#9bab96" ALIGN="CENTER">wms_inv_product_units</TD></TR>
+      <TR><TD PORT="c_pk" COLSPAN="3" BGCOLOR="#bed1b8" ALIGN="LEFT">c_pk</TD></TR>
+      <TR><TD PORT="c_created" COLSPAN="3" ALIGN="LEFT">c_created</TD></TR>
+      <TR><TD PORT="c_updated" COLSPAN="3" ALIGN="LEFT">c_updated</TD></TR>
+      <TR><TD PORT="c_ol" COLSPAN="3" ALIGN="LEFT">c_ol</TD></TR>
+      <TR><TD PORT="c_pid" COLSPAN="3" ALIGN="LEFT">c_pid</TD></TR>
+      <TR><TD PORT="c_qty_type" COLSPAN="3" ALIGN="LEFT">c_qty_type</TD></TR>
+      <TR><TD PORT="c_qty" COLSPAN="3" ALIGN="LEFT">c_qty</TD></TR>
+      <TR><TD PORT="c_product_pk" COLSPAN="3" ALIGN="LEFT">c_product_pk</TD></TR>
+      <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">  </TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">2 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">  </TD></TR>
+    </TABLE>>
+    URL="tables/wms_inv_product_units.html"
+    tooltip="wms_inv_product_units"
+  ];
+}

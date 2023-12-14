@@ -10,6 +10,7 @@
     <statusListener class="ch.qos.logback.core.status.NopStatusListener"/>
 
     <logger name="com.netflix.discovery" level="OFF"/>
+    <logger name="org.ameba" level="WARN"/>
     <logger name="org.hibernate.boot.internal.InFlightMetadataCollectorImpl" level="ERROR"/>
     <logger name="org.hibernate.SQL" level="OFF"/>
     <logger name="org.hibernate.SQL_SLOW" level="OFF"/>
@@ -30,6 +31,7 @@
         <logger name="CALLCONTEXT" level="OFF"/>
         <logger name="MEASURED" level="INFO"/>
         <root level="INFO">
+            <appender-ref ref="STDOUT"/>
             <appender-ref ref="ELK"/>
         </root>
     </springProfile>

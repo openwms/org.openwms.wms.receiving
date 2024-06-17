@@ -17,7 +17,11 @@ package org.openwms.wms.receiving;
 
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
+import org.openwms.wms.receiving.spi.wms.inventory.SyncPackagingUnitApi;
+import org.openwms.wms.receiving.spi.wms.inventory.SyncProductApi;
+import org.openwms.wms.receiving.spi.wms.transport.SyncTransportUnitApi;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -29,7 +33,14 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
  */
 @ExtendWith(SpringExtension.class)
 @SpringBootTest
-class ReceivingStartupIT extends AbstractTestBase {
+class ReceivingStartupIT {
+
+    @MockBean
+    private SyncPackagingUnitApi packagingUnitApi;
+    @MockBean
+    private SyncTransportUnitApi transportUnitApi;
+    @MockBean
+    private SyncProductApi productApi;
 
     @Test void contextLoads() {
         assertEquals(this.getClass(), (ReceivingStartupIT.class));

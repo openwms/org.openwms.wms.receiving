@@ -1,7 +1,10 @@
 # Purpose
-The purpose of the Receiving service is to handle goods receipts. It offers an API to create incoming orders, so called Receiving Orders
-(expected receipts). These kind of receipts are announced before the actual goods are received. Blind receipts are supported as well. Those
-don't require any announcements and allow to capture goods that are not expected to receive. 
+The purpose of the Receiving service is to handle goods receipts. It offers an API to create inbound orders, so called
+Receiving Orders (expected receipts). These kind of receipts are announced before the actual goods receive at the
+warehouse. Blind receipts are supported as well. Those don't require any announcements and allow to capture (or record)
+goods that are not expected to receive.
+
+It allows to capture (record) quantities of items (`PackagingUnits`) or whole `TransportUnits` 
 
 # Resources
 [![Build status](https://github.com/openwms/org.openwms.wms.receiving/actions/workflows/master-build.yml/badge.svg)](https://github.com/openwms/org.openwms.wms.receiving/actions/workflows/master-build.yml)
